@@ -9,8 +9,6 @@ class AppTheme {
     primaryColor: primary,
     colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: const AppBarTheme(
-      centerTitle: true,
-    ),
+    appBarTheme: const AppBarTheme(centerTitle: true),
   );
 }

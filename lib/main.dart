@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Corn Up',
+        debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
         initialRoute: '/home',
         routes: {
