@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  AppTheme._();
-
-  static final Color primary = Colors.green.shade700;
-
-  static final ThemeData lightTheme = ThemeData(
-    primaryColor: primary,
-    colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
-    scaffoldBackgroundColor: Colors.white,
-    appBarTheme: const AppBarTheme(centerTitle: true),
-  );
+  static ThemeData get lightTheme {
+    return ThemeData(
+      primaryColor: const Color(0xFF2E7D32),
+      colorScheme: const ColorScheme.light(
+        primary: Color(0xFF2E7D32),
+        secondary: Color(0xFFF9A825),
+        background: Color(0xFFF5F5F5),
+      ),
+      fontFamily: 'Roboto',
+      useMaterial3: true,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Color(0xFF2E7D32),
+        foregroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+      ),
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        backgroundColor: Color(0xFF2E7D32),
+        foregroundColor: Colors.white,
+      ),
+    );
+  }
 }

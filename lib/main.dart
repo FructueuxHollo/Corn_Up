@@ -10,6 +10,7 @@ import 'package:corn_up/presentation/home/providers/home_provider.dart';
 import 'package:corn_up/presentation/analysis/providers/analysis_provider.dart';
 import 'package:corn_up/data/repositories/analysis_repository_impl.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
